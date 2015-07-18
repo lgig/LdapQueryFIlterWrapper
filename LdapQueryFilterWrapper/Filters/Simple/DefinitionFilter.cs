@@ -1,10 +1,10 @@
 ﻿namespace LdapQueryFilterWrapper.Filters.Simple
 {
-    public class PresenceFilter : Filter
+    public class DefinitionFilter : Filter
     {
         private string attributeName;
 
-        public PresenceFilter(string attributeName)
+        public DefinitionFilter(string attributeName)
         {
             this.attributeName = LdapInputSanitizer.Sanitize(attributeName);
         }

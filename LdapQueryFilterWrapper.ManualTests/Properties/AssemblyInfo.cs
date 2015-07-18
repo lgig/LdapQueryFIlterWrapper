@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LdapQueryFilterWrapper")]
-[assembly: AssemblyDescription("A simple .NET library for building LDAP query filters taking advantage of compile-time syntax checking, intellisense autocompletion, and pre-implemented input encoding.")]
+[assembly: AssemblyTitle("LdapQueryFilterWrapper.ManualTests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LdapQueryFilterWrapper")]
+[assembly: AssemblyProduct("LdapQueryFilterWrapper.ManualTests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9ee849d5-9e38-418d-bd31-6991e5e75158")]
+[assembly: Guid("ae470a96-b378-471e-9784-f0375e0b4726")]
 
 // Version information for an assembly consists of the following four values:
 //

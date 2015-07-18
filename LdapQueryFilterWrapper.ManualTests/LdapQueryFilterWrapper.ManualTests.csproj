@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3234C884-0C7D-4E02-A91E-B74615DF96AD}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{D2AF44E9-507B-46E3-8C49-21472950250F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LdapQueryFilterWrapper</RootNamespace>
-    <AssemblyName>LdapQueryFilterWrapper</AssemblyName>
+    <RootNamespace>LdapQueryFilterWrapper.ManualTests</RootNamespace>
+    <AssemblyName>LdapQueryFilterWrapper.ManualTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -20,10 +21,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,27 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attribute.cs" />
-    <Compile Include="Filters\Simple\Comparison\ContainmentFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\EndFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\MajorityOrEqualityFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\MinorityFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\MinorityOrEqualityFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\MajorityFilter.cs" />
-    <Compile Include="Filters\Simple\InputSanitizer.cs" />
-    <Compile Include="Filters\Simple\DefinitionFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\StartFilter.cs" />
-    <Compile Include="Filters\Compound\MultiArgument\AndFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\ComparisonFilter.cs" />
-    <Compile Include="Filters\Simple\Comparison\EqualityFilter.cs" />
-    <Compile Include="Filters\Filter.cs" />
-    <Compile Include="Filters\Compound\SingleArgument\NotFilter.cs" />
-    <Compile Include="Ldap.cs" />
-    <Compile Include="Filters\Compound\MultiArgument\MultiArgumentOperatorFilter.cs" />
-    <Compile Include="Filters\Compound\MultiArgument\OrFilter.cs" />
+    <Compile Include="ManualTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LdapQueryFilterWrapper\LdapQueryFilterWrapper.csproj">
+      <Project>{3234c884-0c7d-4e02-a91e-b74615df96ad}</Project>
+      <Name>LdapQueryFilterWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

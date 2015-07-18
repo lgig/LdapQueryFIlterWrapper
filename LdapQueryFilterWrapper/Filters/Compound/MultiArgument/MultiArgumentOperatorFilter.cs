@@ -25,5 +25,16 @@ namespace LdapQueryFilterWrapper.Filters.Compound.MultiArgument
                 , operatorToken
                 , argumentsStringBuilder.ToString());
         }
+
+        public override string ToString()
+        {
+            if (filters.Length == 0)
+                return string.Empty;
+
+            if (filters.Length == 1)
+                return filters[0].ToString();
+
+            return GenerateMultipleFiltersString(filters);
+        }
     }
 }
