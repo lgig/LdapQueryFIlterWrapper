@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LdapQueryFilterWrapper", "LdapQueryFilterWrapper\LdapQueryFilterWrapper.csproj", "{3234C884-0C7D-4E02-A91E-B74615DF96AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LdapQueryFilterWrapper.ManualTests", "LdapQueryFilterWrapper.ManualTests\LdapQueryFilterWrapper.ManualTests.csproj", "{D2AF44E9-507B-46E3-8C49-21472950250F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{3234C884-0C7D-4E02-A91E-B74615DF96AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3234C884-0C7D-4E02-A91E-B74615DF96AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3234C884-0C7D-4E02-A91E-B74615DF96AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2AF44E9-507B-46E3-8C49-21472950250F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2AF44E9-507B-46E3-8C49-21472950250F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2AF44E9-507B-46E3-8C49-21472950250F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2AF44E9-507B-46E3-8C49-21472950250F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
